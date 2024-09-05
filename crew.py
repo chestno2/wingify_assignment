@@ -14,6 +14,7 @@ crew = Crew(
     agents=[analyzer_researcher, health_advisor],
     tasks=[Analyzer_searcher_task,Recommending_Task],
     verbose=True,
+    max_rpm=40,
     process=Process.sequential
 )
 
@@ -40,6 +41,11 @@ pdf.cell(200, 10, txt="Blood Test Analysis and Health Recommendations", ln=True,
 pdf.set_font('Arial', '', 12)
 pdf.multi_cell(0, 10, result_text)  # Use the formatted result text
 
+# Adding footer for the PDF
+pdf.set_y(-30)  # Position at 1.5 cm from bottom
+pdf.set_font('Arial', 'I', 10)
+pdf.cell(0, 10, 'Generated on: [DATE]', 0, 0, 'L')
+pdf.cell(0, 10, 'Page ' + str(pdf.page_no()), 0, 0, 'R')
 
 output_pdf_path = "D:/wingify_assignment/Health_Analysis_Recommendations.pdf"
 pdf.output(output_pdf_path)
