@@ -19,10 +19,7 @@ Before you begin, ensure you have met the following requirements:
 1. Open the `crew.py` file.
 
 2. Replace `'your_api_key'` with your actual Google API key and serper API KEY:
-    os.environ['GOOGLE_API_KEY'] = 'your_actual_google_api_key'
-    
-     <!-- SerperDevTool(api_key=os.getenv('SERPER_API_KEY')) -->
-
+   
 3. Ensure your blood test report PDF is in the same directory as the script, or update the file path in the ANALYZER_SEARCHER description:
    
 
