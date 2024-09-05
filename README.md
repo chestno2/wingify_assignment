@@ -7,11 +7,7 @@ Before you begin, ensure you have met the following requirements:
 - You have a blood test report in PDF format.
 
 ## Installation
-
-1. Clone this repository:
-    ```bash
-    
-    ```
+1. Clone the Repo
 2. Make sure you create virtual enviroment for this project
    python -m venv venv
 
