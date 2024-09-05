@@ -10,14 +10,13 @@ Before you begin, ensure you have met the following requirements:
 
 1. Clone this repository:
     ```bash
-    git clone https://github.com/Pratyush-12345/Crew_Blood_Report_Agent.git
+    
     ```
 2. Make sure you create virtual enviroment for this project
+   python -m venv venv
 
 2. Install the required packages:
-    ```bash
-    pip install -U crewai langchain langchain-community langchain-google-genai duckduckgo-search pypdf
-    ```
+    In requirements.txt
 
 ## Configuration
 
