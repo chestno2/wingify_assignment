@@ -5,7 +5,6 @@ from langchain_google_genai import ChatGoogleGenerativeAI
 from tools import pdf_tool,web_search_tool
 
 load_dotenv()
-os.environ['CREWAI_DISABLE_TELEMETRY'] = 'true'
 
 # Set up your Google API key
 os.environ['GOOGLE_API_KEY'] = os.getenv("GOOGLE_API_KEY")

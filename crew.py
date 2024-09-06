@@ -22,7 +22,7 @@ crew = Crew(
 result = crew.kickoff()
 
 
-# Assuming result is a tuple or list, convert it to a string
+
 if isinstance(result, (tuple, list)):
     result_text = "\n".join(str(item) for item in result)
 else:
