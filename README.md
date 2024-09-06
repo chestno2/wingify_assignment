@@ -7,27 +7,19 @@ Before you begin, ensure you have met the following requirements:
 - You have a blood test report in PDF format.
 
 ## Installation
-
-1. Clone this repository:
-    ```bash
-    git clone https://github.com/Pratyush-12345/Crew_Blood_Report_Agent.git
-    ```
+1. Clone the Repo
 2. Make sure you create virtual enviroment for this project
+   python -m venv venv
 
 2. Install the required packages:
-    ```bash
-    pip install -U crewai langchain langchain-community langchain-google-genai duckduckgo-search pypdf
-    ```
+    In requirements.txt
 
 ## Configuration
 
 1. Open the `crew.py` file.
 
 2. Replace `'your_api_key'` with your actual Google API key and serper API KEY:
-    os.environ['GOOGLE_API_KEY'] = 'your_actual_google_api_key'
-    
-     <!-- SerperDevTool(api_key=os.getenv('SERPER_API_KEY')) -->
-
+   
 3. Ensure your blood test report PDF is in the same directory as the script, or update the file path in the ANALYZER_SEARCHER description:
    
 
